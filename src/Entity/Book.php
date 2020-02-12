@@ -88,4 +88,8 @@ class Book
 
         return $this;
     }
+    public function __toString()
+    {
+        return $this->id."-". $this->getTitle();
+    }
 }
